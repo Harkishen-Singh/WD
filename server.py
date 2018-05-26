@@ -4,6 +4,7 @@ from linkDB import *
 app = Flask(__name__)
 
 from views import *
+port = int(os.environ.get("PORT", 5000))
 
 # home page
 #app.add_url_rule('/', 'homePage', home)
@@ -47,4 +48,4 @@ def startApp():
 
 if __name__ == '__main__' :
 	app.debug = True
-	app.run('0.0.0.0', 5000)
+	app.run(host = '0.0.0.0', port = port)
