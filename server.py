@@ -12,7 +12,9 @@ port = int(os.environ.get("PORT", 5000))
 @app.route('/')
 def home():
 	print('Home page request  ')
-	return render_template('index.html', cities=cityObject, states=state)
+	return render_template('index.html', cities_OD=cityObject_OD,
+	 cities_WB=cityObject_WB,
+	 cities_UP=cityObject_UP)
 
 # for starting the weather app
 #app.add_url_rule('/startWeatherProcess', methods=['post'], 'startApp', startApp)
@@ -25,26 +27,46 @@ def startApp():
 		if (user == 'harkishen' or user == 'harkishen singh' or user == 'pratik' or user=='pratik srichandan') and \
 		key == 'socialyticsCompany' :
 
-			print('User authonticated as ' + user)
+			print('User authunticated as ' + user)
 
 			print('User '+user+' Requested to start the Application')
 			obj = Links_to_Database()
-			for i in state :
-			    for j in cityObject :
+			i = 'Odisha'
+			for j in cityObject_OD :
 
-			        obj.asking(j,i)
-			        obj.further_info()
-			        obj.displaying()
-			        obj.object_creation_apending()
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'West_Bengal'
+			for j in cityObject_WB :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			print('\n\n\n\nSuper array of all weathers...\n\n')
+			print(objArr)
+			print('\nperforming all checks...\n')
+			
+			i = 'Uttar_Pradesh'
+			for j in cityObject_UP :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
 
 			print('\n\n\n\nSuper array of all weathers...\n\n')
 			print(objArr)
 			print('\nperforming all checks...\n')
 			checks()
 
-			return '<h3>Your Web Weather Application has been Completed Successfully. All Good.!</h3>'
+			return '<h3>Your Web Weather Application has been Completed Successfully. All Good.!<br/>Registered User : '+user+' </h3>'
 		else :
-			print('User Authontication Failed.! Inputed User : '+user)
+			return '<h3 style="color:red;">User Authuntication Failed.! Inputed User : '+user+'</h3>'
 
 
 if __name__ == '__main__' :

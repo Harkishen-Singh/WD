@@ -5,6 +5,7 @@ time = datetime.datetime.now()
 objArr = []
 
 url = 'mongodb+srv://harkishen:Bbsr131@cluster0-zmd3i.mongodb.net/Weather_record_tests?retryWrites=true'
+#url = 'mongodb://127.0.0.1:27017'
 client = MongoClient(url)
 DBname = 'Weather_record_tests'
 db = client[DBname]
@@ -44,7 +45,7 @@ class Links_to_Database(Core_Base):
         objArr.append(object)
 
 
-cityObject = ['Angul',
+cityObject_OD = ['Angul',
 'Boudh',
 'balangir',
 'Bargarh',
@@ -78,6 +79,21 @@ cityObject = ['Angul',
 'Jatni',
 'Chilika',
 ]
+
+cityObject_WB = ['Birbhum','Bankura','Bardhaman','Darjeeling','DakshinDinajpur',
+'Hooghly','Howrah','Jalpaiguri','CoochBehar','Kolkata','Maldah','PaschimMedinipur',
+'PurbaMedinipur','Murshidabad','Nadia','North24Parganas','South24Parganas',
+'Purulia','UttarDinajpur' ]
+cityObject_UP = ['Agra','Allahabad','Aligarh','AmbedkarNagar','Auraiya','Azamgarh','Barabanki','Budaun',
+'Bagpat','Bahraich','Bijnor','Ballia','Banda','Balrampur','Bareilly','Basti','Bulandshahr','Chandauli',
+'ChhatrapatiShahujiMaharajNagar','Chitrakoot','Deoria','Etah','KanshiRamNagar','Etawah','Firozabad','Farrukhabad',
+'Fatehpur','Faizabad','GautamBuddhNagar','Gonda','Ghazipur','Gorakhpur','Ghaziabad','Hamirpur','Hardoi',
+'MahamayaNagar','Jhansi','Jalaun','JyotibaPhuleNagar','Jaunpur','district','RamabaiNagar','KanpurDehat','Kannauj',
+'Kanpur','Kaushambi','Kushinagar','Lalitpur','LakhimpurKheri','Lucknow','Mau','Meerut','Maharajganj','Mahoba','Mirzapur',
+'Moradabad','Mainpuri','Mathura','Muzaffarnagar','PanchsheelNagar','Hapur','Pilibhit','Shamli',
+'Pratapgarh','Rampur','Raebareli','Saharanpur','Sitapur','Shahjahanpur','SantKabirNagar','Siddharthnagar','Sonbhadra','SantRavidasNagar',
+'Sultanpur','Shravasti','Unnao','Varanasi']
+
 state = ['Odisha']
 
 def checks():

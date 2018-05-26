@@ -151,12 +151,12 @@ class Core_Base:
                         break
 
     def displaying(self):
-        print('\n\n\nTime ' + str(datetime.datetime.now()))
-        print("Temperature at that moment of " + self.city + " is : " + str(self.temperature))
-        print("Feels Like :" + str(self.feel) + " C")
-        print("Visibility :" + str(self.visibility) + " km")
-        print("Humidity :" + str(self.humidity) + " %")
-        print("Dew Point :" + str(self.dew_point) + " '")
+        #print('\n\n\nTime ' + str(datetime.datetime.now()))
+        #print("Temperature at that moment of " + self.city + " is : " + str(self.temperature))
+        #print("Feels Like :" + str(self.feel) + " C")
+        #print("Visibility :" + str(self.visibility) + " km")
+        #print("Humidity :" + str(self.humidity) + " %")
+        #print("Dew Point :" + str(self.dew_point) + " '")
         # print('\n\n'+self.source_text)
         self.splitting()
 
@@ -170,18 +170,18 @@ class Core_Base:
             if b == tt:
                 counter += 1
                 pos = i + len(tt) + 19
-        print('The counter of "Hourly Forecast -" is ' + str(counter))
+        #print('The counter of "Hourly Forecast -" is ' + str(counter))
         if counter == 1:
             #print(self.source_text[pos-3:pos+337])
             self.var = self.source_text[pos-3:pos + 337].split('\n\n\n')
             #print(self.var)
-            print('\nHourly Forecast\n')
+            #print('\nHourly Forecast\n')
             for xx in self.var:
                 xx.replace('\n', ' ')
             self.var.pop(len(self.var) - 1)
             self.var.pop(len(self.var) - 1)
             self.var.pop(len(self.var) - 1)
-            print(self.var)
+            #print(self.var)
             self.other_general_information()
             self.temperature_and_rainfall_processing()
         else:
@@ -204,7 +204,7 @@ class Core_Base:
             placesArr.pop(2)
         # print(placesArr)
         #self.place = placesArr[0] + ' ' + placesArr[1]
-        print('\n' + self.place + '\n')
+        print(self.place )
 
     def temperature_and_rainfall_processing(self):
 
@@ -264,8 +264,8 @@ class Core_Base:
             # print(i[8:10].replace('%',''))
             self.rains.append(float(i[8:10].replace('%', '')))
 
-        print(self.rains)
-        print(self.temps)
+        #print(self.rains)
+        #print(self.temps)
 
         self.continuing()
 
@@ -291,9 +291,9 @@ class Core_Base:
             total_temp += j
         self.avg_temp = total_temp / len(self.temps)
 
-        print('\nMax rainfall ' + str(self.max_rain_probability) + '\t Max temp ' + str(self.max_temp))
-        print('Min rainfall ' + str(self.min_rain_probability) + '\t Min temp ' + str(self.min_temp))
-        print('Avg rainfall ' + str(self.avg_rain) + '\t Avg Temp ' + str(self.avg_temp))
+        #print('\nMax rainfall ' + str(self.max_rain_probability) + '\t Max temp ' + str(self.max_temp))
+        #print('Min rainfall ' + str(self.min_rain_probability) + '\t Min temp ' + str(self.min_temp))
+        #print('Avg rainfall ' + str(self.avg_rain) + '\t Avg Temp ' + str(self.avg_temp))
 
 '''
 obj = Core_Base()

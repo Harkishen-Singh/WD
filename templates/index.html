@@ -16,16 +16,37 @@
 	</form><br/>
 	<hr/>
 	<h3>Currently supported cities and states below</h3>
+	
+	
+	<h3>State : Odisha </h3>
 	<h4>Cities</h4>
-	{% for s in states %}
-	<h3>State : {{s}} </h3>
 	<ol>
-		{% for city in cities %}
+		{% for city in cities_OD %}
+
 		<li>{{city}} 
 		</li>
 		{% endfor %}
 	</ol>
-	{% endfor %} 
+	
+	<h3>State : West Bengal </h3>
+	<h4>Cities</h4>
+	<ol>
+		{% for city in cities_WB %}
+
+		<li>{{city}} 
+		</li>
+		{% endfor %}
+	</ol>
+	<h3>State : Uttar Pradesh </h3>
+	<h4>Cities</h4>
+	<ol>
+		{% for city in cities_UP %}
+
+		<li>{{city}} 
+		</li>
+		{% endfor %}
+	</ol>
+	
 
 </body>
 </html>
