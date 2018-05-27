@@ -31,7 +31,7 @@ def startApp():
 
 			print('User '+user+' Requested to start the Application')
 			obj = Links_to_Database()
-
+			
 			
 			i = 'Odisha'
 			for j in cityObject_OD :
@@ -181,6 +181,46 @@ def startApp():
 
 			i = 'Nagaland'
 			for j in cityObject_Nagaland :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+			
+			i = 'Punjab'
+			for j in cityObject_Punjab :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Rajasthan'
+			for j in cityObject_Rajasthan :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Sikkim'
+			for j in cityObject_Sikkim :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Tripura'
+			for j in cityObject_Tripura :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Uttarakhand'
+			for j in cityObject_Uttarakhand :
 
 			    obj.asking(j,i)
 			    obj.further_info()

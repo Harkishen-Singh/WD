@@ -81,6 +81,19 @@ cityObject_OD = ['Angul',
 'Chilika',
 ]
 
+
+
+cityObject_Puducherry =['Karaikal','Mahe','Pondicherry','Yanam']
+
+cityObject_Punjab =['Amritsar','Barnala','Bathinda','Firozpur','Faridkot','FatehgarhSahib','Fazilka','Gurdaspur','Hoshiarpur','Jalandhar','Kapurt','hala','Ludhiana','Mansa','Moga','SriMuktsarSahib','Pathankot','Patiala','Rupnagar','Ajitgarh','Mohali','Sangrur','Nawanshahr','TarnTaran']
+
+cityObject_Rajasthan= ['Ajmer','Alwar','Bikaner','Barmer','Banswara','Bharatpur','Baran','Bundi','Bhilwara','Churu','Chittorgarh','Dausa','Dholpur','Dungapur','Ganganagar','Hanumangarh','Jhunjhunu','Jalore','Jodhpur','Jaipur','Jaisalmer','Jhalawar','Karauli','Kota','Nagaur','Pali','Pratapgarh','Rajsamand','Sikar','SawaiMadhopur','Sirohi','Tonk','Udaipur']
+cityObject_Sikkim =['EastSikkim','NorthSikkim','SouthSikkim','WestSikkim']
+cityObject_TamilNadu= ['Ariyalur','Chennai','Coimbatore','Cuddalore','Dharmapuri','Dindigul','Erode','Kanchipuram','Kanyakumari','Karur','Madurai','Nagapattinam','Nilgiris','Namakkal','Perambalur','Pudukkottai','Ramanathapuram','Salem','Sivaganga','Tirupur','Tiruchirappalli','Theni','Tirunelveli','Thanjavur','Thoothukudi','Tiruvallur','Tiruvarur','Tiruvannamalai','Vellore','Viluppuram','Virudhunagar']
+cityObject_Tripura=['Dhalai','NorthTripura','SouthTripura','Khowai','WestTripura']
+cityObject_Uttarakhand=['Almora','Bageshwar','Chamoli','Champawat','Dehradun','Haridwar','Nainital','PauriGarhwal','Pithoragarh','Rudraprayag','TehriGarhwal','UdhamSinghNagar','Uttarkashi']
+
+
 cityObject_WB = ['Birbhum','Bankura','Bardhaman','Darjeeling','DakshinDinajpur',
 'Hooghly','Howrah','Jalpaiguri','CoochBehar','Kolkata','Maldah','PaschimMedinipur',
 'PurbaMedinipur','Murshidabad','Nadia','North24Parganas','South24Parganas',
@@ -190,4 +203,4 @@ def checks():
         print(previous_collections)
 
 
-
+# mongo "mongodb+srv://cluster0-zmd3i.mongodb.net/test" --username harkishen
