@@ -14,7 +14,31 @@ def home():
 	print('Home page request  ')
 	return render_template('index.html', cities_OD=cityObject_OD,
 	 cities_WB=cityObject_WB,
-	 cities_UP=cityObject_UP)
+	 cities_UP=cityObject_UP,
+	 cities_AP=cityObject_AP,
+	 cities_Bihar=cityObject_Bihar,
+	 cities_Chatis=cityObject_Chatis,
+	 cities_Guj=cityObject_Guj,
+	 cities_Haryn=cityObject_Haryn,
+	 cities_HP=cityObject_HP,
+	 cities_Karnataka=cityObject_Karnataka,
+	 cities_JK=cityObject_JK,
+	 cities_Kerela=cityObject_Kerela,
+	 cities_AruP=cityObject_AruP,
+	 cities_Maharashtra=cityObject_Maharashtra,
+	 cities_Manipur=cityObject_Manipur,
+	 cities_Punjab=cityObject_Punjab,
+	 cities_Rajasthan=cityObject_Rajasthan,
+	 cities_Sikkim=cityObject_Sikkim,
+	 cities_Nagaland=cityObject_Nagaland,
+	 cities_Tripura=cityObject_Tripura,
+	 cities_Uttarakhand=cityObject_Uttarakhand,
+	 cities_TamilNadu=cityObject_TamilNadu,
+	 cities_Puducherry=cityObject_Puducherry,
+	 cities_JHK=cityObject_JHK,
+	 cities_MadhyaPradesh=cityObject_MadhyaPradesh,
+	 cities_Meghalaya=cityObject_Meghalaya,cities_Mizoram=cityObject_Mizoram,
+	 )
 
 # for starting the weather app
 #app.add_url_rule('/startWeatherProcess', methods=['post'], 'startApp', startApp)
@@ -221,6 +245,29 @@ def startApp():
 
 			i = 'Uttarakhand'
 			for j in cityObject_Uttarakhand :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'TamilNadu'
+			for j in cityObject_TamilNadu :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+			i = 'Puducherry'
+			for j in cityObject_Puducherry:
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Jharkhand'
+			for j in cityObject_JHK:
 
 			    obj.asking(j,i)
 			    obj.further_info()
