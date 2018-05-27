@@ -23,6 +23,7 @@ class Core_Base:
 
     def asking(self,cityss,statess):
         self.stateSp = statess
+        self.citySp = cityss
         #self.city = input("City name : ")
         self.city = cityss.lower()
         #self.state = input("State name : ")

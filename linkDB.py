@@ -4,8 +4,8 @@ import datetime
 time = datetime.datetime.now()
 objArr = []
 
-#url = 'mongodb+srv://harkishen:Bbsr131@cluster0-zmd3i.mongodb.net/Weather_record_tests?retryWrites=true'
-url = 'mongodb://127.0.0.1:27017'
+url = 'mongodb+srv://harkishen:Bbsr131@cluster0-zmd3i.mongodb.net/Weather_record_tests?retryWrites=true'
+#url = 'mongodb://127.0.0.1:27017'
 client = MongoClient(url)
 DBname = 'Weather_record_tests'
 db = client[DBname]
@@ -25,6 +25,7 @@ class Links_to_Database(Core_Base):
         object = {
             "place" : self.place,
             "state" : self.stateSp,
+            "city" : self.citySp,
             "date" : str(time)[:10],
             "time_now" : str(time)[11:],
             "temperature_that_moment" : self.temperature,
@@ -94,7 +95,7 @@ cityObject_UP = ['Agra','Allahabad','Aligarh','AmbedkarNagar','Auraiya','Azamgar
 'Pratapgarh','Rampur','Raebareli','Saharanpur','Sitapur','Shahjahanpur','SantKabirNagar','Siddharthnagar','Sonbhadra','SantRavidasNagar',
 'Sultanpur','Shravasti','Unnao','Varanasi']
 
-cityObject_AP =['Adilabad','Anantapur','Chittoor','Kakinada','Guntur','Hyderabad','Karimnagar','Khammam',
+cityObject_AP =['Anantapur','Chittoor','Kakinada','Guntur','Hyderabad','Karimnagar','Khammam',
 'Krishna','Kurnool','Mahbubnagar','Medak','Nalgonda','Nizamabad','Ongole','Hyderabad','Srikakulam','Nellore',
 'Visakhapatnam','Vizianagaram','Warangal','Eluru','Kadapa']
 cityObject_AruP = ['Anjaw','Changlang','EastSiang','KurungKumey','Lohit','LowerDibangValley','LowerSubansiri',
@@ -105,7 +106,8 @@ cityObject_AruP = ['Anjaw','Changlang','EastSiang','KurungKumey','Lohit','LowerD
 
 cityObject_Bihar=['Araria','Arwal','Aurangabad','Banka','Begusarai','Bhagalpur','Bhojpur','Buxar','Darbhanga','EastChamparan','Gaya','Gopalganj','Jamui','Jehanabad','Kaimur','Katihar','Khagaria','Kishanganj','Lakhisarai','Madhepura','Madhubani','Munger','Muzaffarpur','Nalanda','Nawada','Patna','Purnia','Rohtas','Saharsa','Samastipur','Saran','Sheikhpura','Sheohar','Sitamarhi','Siwan','Supaul','Vaishali','WestChamparan']
 
-cityObject_Chatis=['Bastar','Bijapur','Bilaspur','Dantewada','Dhamtari','Durg','Jashpur','Janjgir-Champa','Korba','Koriya','Kanker','Kabirdham ','Kawardha','Mahasamund','Narayanpur','Raigarh','Rajnandgaon','Raipur','Surguja']
+cityObject_Chatis=['Bastar','Bijapur','Bilaspur','Dantewada','Dhamtari','Durg','Jashpur','Janjgir-Champa','Korba','Koriya','Kanker',
+'Kabirdham','Kawardha','Mahasamund','Narayanpur','Raigarh','Rajnandgaon','Raipur','Surguja']
 
 
 cityObject_specifics = ['Delhi','Goa']
@@ -118,7 +120,7 @@ cityObject_Haryn=['Ambala','Bhiwani','Faridabad','Fatehabad','Gurgaon','Hissar',
 cityObject_HP =['Bilaspur','Chamba','Hamirpur','Kangra','Kinnaur','Kullu','Lahaul','Spiti','Mandi','Shimla','Sirmaur','Solan','Una']
 
 cityObject_JK=[
-'Anantnag','Badgam','Bandipora','Baramulla','Doda','Ganderbal','Jammu','Kargil','Kathua','Kishtwar','Kupwara','Kulgam','Leh',
+'Anantnag','Badgam','Baramula','Doda','Ganderbal','Jammu','Kathua','Kishtwar','Kupwara','Kulgam',
 'Poonch','Pulwama','Rajauri','Ramban','Reasi','Samba','Shopian','Srinagar','Udhampur'
 ]
 cityObject_JHK=[

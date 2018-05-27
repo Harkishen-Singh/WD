@@ -27,12 +27,12 @@ def startApp():
 		if (user == 'harkishen' or user == 'harkishen singh' or user == 'pratik' or user=='pratik srichandan') and \
 		key == 'socialyticsCompany' :
 
-			return '<h3>Your Web Weather Application has been Completed Successfully. All Good.!<br/>Registered User : '+user+' </h3>'
-
 			print('User authunticated as ' + user)
 
 			print('User '+user+' Requested to start the Application')
 			obj = Links_to_Database()
+
+			
 			i = 'Odisha'
 			for j in cityObject_OD :
 
@@ -104,7 +104,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-
+			
 
 			i = 'HimachalPradesh'
 			for j in cityObject_HP :
@@ -113,9 +113,9 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-
+			
 			i = 'JammuKashmir'
-			for j in cityObject_UP :
+			for j in cityObject_JK :
 
 			    obj.asking(j,i)
 			    obj.further_info()
@@ -137,15 +137,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-
-			i = 'Karnataka'
-			for j in cityObject_Karnataka :
-
-			    obj.asking(j,i)
-			    obj.further_info()
-			    obj.displaying()
-			    obj.object_creation_apending()
-
+			
 			i = 'MadhyaPradesh'
 			for j in cityObject_MadhyaPradesh :
 
@@ -185,8 +177,9 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
+			
 
-			i = 'Manipur'
+			i = 'Nagaland'
 			for j in cityObject_Nagaland :
 
 			    obj.asking(j,i)
@@ -194,10 +187,13 @@ def startApp():
 			    obj.displaying()
 			    obj.object_creation_apending()
 
+
 			print('\n\n\n\nSuper array of all weathers...\n\n')
 			print(objArr)
 			print('\nperforming all checks...\n')
 			checks()
+
+			return '<h3>Your Web Weather Application has been Completed Successfully. All Good.!<br/>Registered User : '+user+' </h3>'
 
 			
 		else :
