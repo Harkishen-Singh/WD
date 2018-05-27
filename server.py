@@ -57,6 +57,143 @@ def startApp():
 			    obj.displaying()
 			    obj.object_creation_apending()
 
+			i = 'AndhraPradesh'
+			for j in cityObject_AP :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'ArunachalPradesh'
+			for j in cityObject_AruP :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Bihar'
+			for j in cityObject_Bihar :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Chattisgrah'
+			for j in cityObject_Chatis :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Gujarat'
+			for j in cityObject_Guj :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Haryana'
+			for j in cityObject_Haryn :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+
+			i = 'HimachalPradesh'
+			for j in cityObject_HP :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'JammuKashmir'
+			for j in cityObject_UP :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Karnataka'
+			for j in cityObject_Karnataka :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Kerela'
+			for j in cityObject_Kerela :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Karnataka'
+			for j in cityObject_Karnataka :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'MadhyaPradesh'
+			for j in cityObject_MadhyaPradesh :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Maharashtra'
+			for j in cityObject_Maharashtra :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Manipur'
+			for j in cityObject_Manipur :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Meghalaya'
+			for j in cityObject_Meghalaya :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Mizoram'
+			for j in cityObject_Mizoram :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
+			i = 'Manipur'
+			for j in cityObject_Nagaland :
+
+			    obj.asking(j,i)
+			    obj.further_info()
+			    obj.displaying()
+			    obj.object_creation_apending()
+
 			print('\n\n\n\nSuper array of all weathers...\n\n')
 			print(objArr)
 			print('\nperforming all checks...\n')
