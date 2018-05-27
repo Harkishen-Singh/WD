@@ -27,6 +27,8 @@ def startApp():
 		if (user == 'harkishen' or user == 'harkishen singh' or user == 'pratik' or user=='pratik srichandan') and \
 		key == 'socialyticsCompany' :
 
+			return '<h3>Your Web Weather Application has been Completed Successfully. All Good.!<br/>Registered User : '+user+' </h3>'
+
 			print('User authunticated as ' + user)
 
 			print('User '+user+' Requested to start the Application')
@@ -39,19 +41,15 @@ def startApp():
 			    obj.displaying()
 			    obj.object_creation_apending()
 
-			i = 'West_Bengal'
+			i = 'WestBengal'
 			for j in cityObject_WB :
 
 			    obj.asking(j,i)
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-
-			print('\n\n\n\nSuper array of all weathers...\n\n')
-			print(objArr)
-			print('\nperforming all checks...\n')
 			
-			i = 'Uttar_Pradesh'
+			i = 'UttarPradesh'
 			for j in cityObject_UP :
 
 			    obj.asking(j,i)
@@ -64,7 +62,7 @@ def startApp():
 			print('\nperforming all checks...\n')
 			checks()
 
-			return '<h3>Your Web Weather Application has been Completed Successfully. All Good.!<br/>Registered User : '+user+' </h3>'
+			
 		else :
 			return '<h3 style="color:red;">User Authuntication Failed.! Inputed User : '+user+'</h3>'
 
