@@ -85,7 +85,7 @@ cityObject_OD = ['Angul',
 
 cityObject_Puducherry =['Karaikal','Mahe','Pondicherry','Yanam']
 
-cityObject_Punjab =['Amritsar','Barnala','Bathinda','Firozpur','Faridkot','FatehgarhSahib','Fazilka','Gurdaspur','Hoshiarpur','Jalandhar','Kapurt','hala','Ludhiana','Mansa','Moga','SriMuktsarSahib','Pathankot','Patiala','Rupnagar','Ajitgarh','Mohali','Sangrur','Nawanshahr','TarnTaran']
+cityObject_Punjab =['Amritsar','Chandigarh','Barnala','Bathinda','Firozpur','Faridkot','FatehgarhSahib','Fazilka','Gurdaspur','Hoshiarpur','Jalandhar','Kapurt','hala','Ludhiana','Mansa','Moga','SriMuktsarSahib','Pathankot','Patiala','Rupnagar','Ajitgarh','Mohali','Sangrur','Nawanshahr','TarnTaran']
 
 cityObject_Rajasthan= ['Ajmer','Alwar','Bikaner','Barmer','Banswara','Bharatpur','Baran','Bundi','Bhilwara','Churu','Chittorgarh','Dausa','Dholpur','Dungapur','Ganganagar','Hanumangarh','Jhunjhunu','Jalore','Jodhpur','Jaipur','Jaisalmer','Jhalawar','Karauli','Kota','Nagaur','Pali','Pratapgarh','Rajsamand','Sikar','SawaiMadhopur','Sirohi','Tonk','Udaipur']
 cityObject_Sikkim =['EastSikkim','NorthSikkim','SouthSikkim','WestSikkim']
@@ -123,7 +123,7 @@ cityObject_Chatis=['Bastar','Bijapur','Bilaspur','Dantewada','Dhamtari','Durg','
 'Kabirdham','Kawardha','Mahasamund','Narayanpur','Raigarh','Rajnandgaon','Raipur','Surguja']
 
 
-cityObject_specifics = ['Delhi','Goa']
+cityObject_specifics = ['Delhi','Panaji','Margao','Chandigarh']
 
 
 cityObject_Guj=['Ahmedabad','Amrelidistrict','Anand','Banaskantha','Bharuch','Bhavnagar','Dahod','TheDangs','Gandhinagar','Jamnagar','Junagadh','Kutch','Kheda','Mehsana','Narmada','Navsari','Patan','Panchmahal','Porbandar','Rajkot','Sabarkantha','Surendranagar','Surat','Vyara','Vadodara','Valsad']

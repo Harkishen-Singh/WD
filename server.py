@@ -38,6 +38,7 @@ def home():
 	 cities_JHK=cityObject_JHK,
 	 cities_MadhyaPradesh=cityObject_MadhyaPradesh,
 	 cities_Meghalaya=cityObject_Meghalaya,cities_Mizoram=cityObject_Mizoram,
+	 cities_specifics = cityObject_specifics,
 	 )
 
 # for starting the weather app
@@ -55,8 +56,8 @@ def startApp():
 
 			print('User '+user+' Requested to start the Application')
 			obj = Links_to_Database()
-			
-			
+
+
 			i = 'Odisha'
 			for j in cityObject_OD :
 
@@ -72,7 +73,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-			
+
 			i = 'UttarPradesh'
 			for j in cityObject_UP :
 
@@ -128,7 +129,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-			
+
 
 			i = 'HimachalPradesh'
 			for j in cityObject_HP :
@@ -137,7 +138,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-			
+
 			i = 'JammuKashmir'
 			for j in cityObject_JK :
 
@@ -161,7 +162,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-			
+
 			i = 'MadhyaPradesh'
 			for j in cityObject_MadhyaPradesh :
 
@@ -201,7 +202,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-			
+
 
 			i = 'Nagaland'
 			for j in cityObject_Nagaland :
@@ -210,7 +211,7 @@ def startApp():
 			    obj.further_info()
 			    obj.displaying()
 			    obj.object_creation_apending()
-			
+
 			i = 'Punjab'
 			for j in cityObject_Punjab :
 
@@ -274,6 +275,18 @@ def startApp():
 			    obj.displaying()
 			    obj.object_creation_apending()
 
+			i = ''
+			for j in cityObject_specifics:
+
+				if j =='Panaji' or j == 'Margao':
+					i = 'GA'
+				else :
+					i=''
+				obj.asking(j,i)
+				obj.further_info()
+				obj.displaying()
+				obj.object_creation_apending()
+
 
 			print('\n\n\n\nSuper array of all weathers...\n\n')
 			print(objArr)
@@ -282,11 +295,11 @@ def startApp():
 
 			return '<h3>Your Web Weather Application has been Completed Successfully. All Good.!<br/>Registered User : '+user+' </h3>'
 
-			
+
 		else :
 			return '<h3 style="color:red;">User Authuntication Failed.! Inputed User : '+user+'</h3>'
 
 
 if __name__ == '__main__' :
-	app.debug = True
+	app.debug = False
 	app.run(host = '0.0.0.0', port = port)
