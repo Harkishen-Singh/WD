@@ -57,7 +57,7 @@ def startApp():
 			print('User '+user+' Requested to start the Application')
 			obj = Links_to_Database()
 
-
+			
 			i = 'Odisha'
 			for j in cityObject_OD :
 
@@ -130,7 +130,7 @@ def startApp():
 			    obj.displaying()
 			    obj.object_creation_apending()
 
-
+			
 			i = 'HimachalPradesh'
 			for j in cityObject_HP :
 

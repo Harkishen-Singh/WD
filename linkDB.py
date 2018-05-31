@@ -19,7 +19,7 @@ class Links_to_Database(Core_Base):
 
     def __init__(self):
         pass
-        
+
 
     def object_creation_apending(self):
         object = {
@@ -130,7 +130,7 @@ cityObject_Guj=['Ahmedabad','Amrelidistrict','Anand','Banaskantha','Bharuch','Bh
 
 cityObject_Haryn=['Ambala','Bhiwani','Faridabad','Fatehabad','Gurgaon','Hissar','Jhajjar','Jind','Karnal','Kaithal','Kurukshetra','Mahendragarh','Mewat','Palwal','Panchkula','Panipat','Rewari','Rohtak','Sirsa','Sonipat','YamunaNagar']
 
-cityObject_HP =['Bilaspur','Chamba','Hamirpur','Kangra','Kinnaur','Kullu','Lahaul','Spiti','Mandi','Shimla','Sirmaur','Solan','Una']
+cityObject_HP =['Bilaspur','Chamba','Hamirpur','Kangra','Kinnaur','Kullu','Lahaul','Mandi','Shimla','Sirmaur','Solan','Una']
 
 cityObject_JK=[
 'Anantnag','Badgam','Baramula','Doda','Ganderbal','Jammu','Kathua','Kishtwar','Kupwara','Kulgam',
@@ -181,7 +181,7 @@ state = ['Odisha']
 def checks():
 
         previous_collections = db.collection_names(include_system_collections=False)
- 
+
         collectionAlreadyAvailable = False
         for jj in previous_collections :
 
@@ -189,9 +189,9 @@ def checks():
                 collectionAlreadyAvailable = True
                 print(previous_collections)
                 db.drop_collection(jj)
-                
+
                 print('Previous Similar collection found. Deleting it to avoid conflicts. Time : '+str(time))
-                
+
                 print('\n')
         if collectionAlreadyAvailable == False :
             print(previous_collections)
