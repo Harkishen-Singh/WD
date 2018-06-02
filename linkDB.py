@@ -48,9 +48,9 @@ class Links_to_Database(Core_Base):
 
 cityObject_OD = ['Angul',
 'Boudh',
-'balangir',
 'Bargarh',
 'Balasore',
+'balangir',
 'Bhadrak',
 'Cuttack',
 'Debagarh',

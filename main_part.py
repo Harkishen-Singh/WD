@@ -263,7 +263,14 @@ class Core_Base:
 
             self.temps.append(xx)
             # print(i[8:10].replace('%',''))
-            self.rains.append(float(i[8:10].replace('%', '')))
+            numm = ''
+            for k in i[7:11]:
+                if k.isdigit() :
+                    #print(k)
+                    numm+=k
+            #print(i[7:11])
+            self.rains.append(float(numm))
+            numm = ''
 
         #print(self.rains)
         #print(self.temps)
