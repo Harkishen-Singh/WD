@@ -5,7 +5,7 @@ from linkDB import *
 app = Flask(__name__)
 
 from views import *
-port = int(os.environ.get("PORT", 1000))
+port = int(os.environ.get("PORT", 5000))
 
 # home page
 #app.add_url_rule('/', 'homePage', home)
